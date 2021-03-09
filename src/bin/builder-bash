@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+from oe_build_env.docker import Docker
+
+if __name__ == '__main__':
+    docker = Docker(tag='oe-builder')
+    docker.run('/bin/bash')
